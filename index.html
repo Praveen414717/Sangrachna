@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangrachna Club</title>
+    <link rel="icon" href="logo/favicon-logo.png" type="image/png"> <!-- Favicon -->
+    <link rel="stylesheet" href="css/fnavbar.css"> <!-- Existing navbar CSS -->
+    <link rel="stylesheet" href="css/fslider.css"> <!-- slider image -->
+    <link rel="stylesheet" href="css/faboutus.css"> <!-- about us section -->
+    <link rel="stylesheet" href="css/fmembers.css"> <!-- members section -->
+    <link rel="stylesheet" href="css/fevents.css"> <!-- events section -->
+    <link rel="stylesheet" href="css/footer.css"> <!-- footer section -->
+    <link rel="stylesheet" href="css/fkitabghar.css"> <!-- footer section -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+    <!-- Link Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav class="navbar">
+        <!-- Left Side Links -->
+        <ul class="nav-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#members">Members</a></li>
+        </ul>
+
+        <!-- Club Logo -->
+        <div class="logo">
+            <img src="logo/sangrachna-logo.png" alt="Club Logo">
+        </div>
+
+        <!-- Right Side Links -->
+        <ul class="nav-right">
+            <li><a href="#events">Events</a></li>
+            <li><a href="#kitabghar">Kitabghar</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- Dropdown Menu for Mobile -->
+    <div class="dropdown-menu">
+        <ul class="dropdown-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#members">Team</a></li>
+        </ul>
+        <ul class="dropdown-right">
+            <li><a href="#events">Events</a></li>
+            <li><a href="#kitabghar">Kitabghar</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+        </ul>
+    </div>
+</header>
+
+
+
+
+<!-- Sliding Background Section -->
+<div class="slider">
+    <div class="slider-images">
+        <div class="slide" style="background-image: url('images/NIET7887.JPG');"></div>
+        <div class="slide" style="background-image: url('images/NIET7904.JPG');"></div>
+        <div class="slide" style="background-image: url('images/NIET8244.JPG');"></div>
+        <div class="slide" style="background-image: url('images/aboutus.JPG');"></div>
+    </div>
+
+    <div class="gradient-overlay"></div>
+
+    <div class="home-text">
+        <h3>You Bring the <strong class="bolds">Stories</strong></h3> 
+        <h3>We Bring the <Strong class="bolds">Platform</Strong></h3>
+        
+        <!-- Button to download magazine -->
+        <a href="html/magazine.html" class="download-button">
+            <i class="fas fa-download"></i> Annual Magazine
+        </a> 
+
+    </div> 
+</div>
+
+
+
+
+<!-- About Us Section -->
+<section id="about-us" class="about-us">
+    <div class="about-content">
+        <div class="about-image">
+            <img src="images/aboutus.JPG" alt="About Us Image">
+        </div>
+        <div class="about-text">
+            <h1 class="about-heading">About Us</h1>
+            <p class="about-description">
+                <strong>Sangrachna</strong>, meaning "to create," is the editorial club 
+                at the Noida Institute of Engineering and Technology, Greater Noida. 
+                It provides students a platform to express themselves through writing, 
+                hosting discussions, open mics, and various extracurricular events. 
+                The club encourages students to overcome hesitation and stage fright 
+                while keeping them informed about global issues, motivating them to 
+                engage in inter-college competitions and take active roles beyond the 
+                classroom.
+                </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Members Section -->
+<section id="members" class="members">
+    <div class="mem-box">
+    <h2 class="member-heading">Members</h2>
+    
+    <div class="members-container">
+        <!-- Faculty Members Row -->
+        <div class="faculty-members">
+            <div class="member-box">
+                <img src="images/manish.JPG" alt="Manish Kaushik" class="member-image">
+                <h4>Dr. Manish Kaushik</h4>
+                <p class="designation">Dean (S & W)</p>
+                <blockquote class="quote">"Inspirational quote from Manish sir."</blockquote>
+            </div>
+            <div class="member-box">
+                <img src="images/kanika.png" alt="Kanika Jindal" class="member-image">
+                <h4>Ms. Kanika Jindal</h4>
+                <p class="designation">Associate Dean (S & W)</p>
+                <blockquote class="quote">"Inspirational quote from Kanika ma'am."</blockquote>
+            </div>
+            <div class="member-box">
+                <img src="images/harsh.JPG" alt="Harsh Awasthi" class="member-image">
+                <h4>Mr. Harsh Awasthi</h4>
+                <p class="designation">Chief Editor</p>
+                <blockquote class="quote">"Inspirational quote from Harsh sir."</blockquote>
+            </div>
+        </div>
+
+        <!-- Student Members Row -->
+        <div class="student-members">
+            <div class="member-box">
+                <img src="images/ananya.png" alt="Ananya Rajeev" class="member-image">
+                <h4>Ananya Rajeev</h4>
+                <p class="designation">President</p>
+                <blockquote class="quote">"Creativity is intelligence having fun.."</blockquote>
+            </div>
+            <div class="member-box">
+                <img src="images/juyal.JPG" alt="Aditya Juyal" class="member-image">
+                <h4>Aditya Juyal</h4>
+                <p class="designation">Vice President</p>
+                <blockquote class="quote">"The future belongs to those who believe in their dreams."</blockquote>
+            </div>
+            <div class="member-box">
+                <img src="images/shantanu.JPG" alt="Shantanu Suman" class="member-image">
+                <h4>Shantanu Suman</h4>
+                <p class="designation">Vice President</p>
+                <blockquote class="quote">"Embrace the journey, not just the destination."</blockquote>
+            </div>
+            <div class="member-box">
+                <img src="images/shreya.JPG" alt="Shreya Vishwakarma" class="member-image">
+                <h4>Shreya Vishwakarma</h4>
+                <p class="designation">Vice President</p>
+                <blockquote class="quote">"Where there is a will, there is a way."</blockquote>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Events Section -->
+<section id="events" class="events-section">
+    <div class="event-superbox">
+        <h2 class="event-heading">Events</h2>
+        
+        <!-- Upcoming Events Section -->
+        <div class="events-container">
+            <h3 id="upcoming-events" class="sub-heading">Upcoming Events</h3>
+            <div class="carousel-container">
+                <button class="prev-btn" onclick="slideLeft('upcoming-events')">‹</button>
+                <div class="event-carousel" id="upcoming-events">
+                    <div class="event-box" onclick="openModal('Chitthi', 'images/upcomming events/Chitthi.png', 'Soon', 'Letters from the heart')">
+                        <img src="images/upcomming events/Chitthi.png" alt="Chitthi" class="event-image">
+                        <h4>Chitthi</h4>
+                        <p class="event-description">Letters from the heart.</p>
+                    </div>
+                    <div class="event-box" onclick="openModal('Filmy', 'images/upcomming events/Filmy.png', 'Soon', 'Characters on the screen')">
+                        <img src="images/upcomming events/Filmy.png" alt="Filmy" class="event-image">
+                        <h4>Filmy</h4>
+                        <p class="event-description">Characters on the screen.</p>
+                    </div>
+                    <div class="event-box" onclick="openModal('Jabardasti', 'images/upcomming events/Jabardasti.png', 'Soon', 'Forced to not fit in.')">
+                        <img src="images/upcomming events/Jabardasti.png" alt="Jabardasti" class="event-image">
+                        <h4>Jabardasti</h4>
+                        <p class="event-description">Forced to not fit in.</p>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="slideRight('upcoming-events')">›</button>
+            </div>
+        </div>
+
+        <!-- Past Events Section -->
+        <div class="events-container">
+            <h3 id="past-events" class="sub-heading">Past Events</h3>
+            <div class="carousel-container">
+                <button class="prev-btn" onclick="slideLeft('past-events')">‹</button>
+                <div class="event-carousel" id="past-events">
+                    <div class="event-box" onclick="openModal('Kitabey', 'images/past events/Kitabey.png', 'Soon', 'World Book Fair visit.')">
+                        <img src="images/past events/Kitabey.png" alt="Kitabey" class="event-image">
+                        <h4>Kitabey</h4>
+                        <p class="event-description">World Book Fair visit.</p>
+                    </div>
+                    <div class="event-box" onclick="openModal('Yaadon ka Bandhan', 'images/past events/Yaadon ka bandhan.png', 'Soon', 'A bond beyond threads.')">
+                        <img src="images/past events/Yaadon ka bandhan.png" alt="Yaadon ka Bandhan" class="event-image">
+                        <h4>Yaadon ka Bandhan</h4>
+                        <p class="event-description">A bond beyond threads.</p>
+                    </div>
+                    <div class="event-box" onclick="openModal('Ramotsav', 'images/past events/Ramotsav.png', 'Soon', 'The unknowns of Ramayan.')">
+                        <img src="images/past events/Ramotsav.png" alt="Ramotsav" class="event-image">
+                        <h4>Ramotsav</h4>
+                        <p class="event-description">The unknowns of Ramayan.</p>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="slideRight('past-events')">›</button>
+            </div>
+        </div>
+
+        <!-- See More Button -->
+        <a href="html/allevents.html" class="see-more-btn">See More</a>
+        
+    
+        
+
+        <!-- Modal for Event Details -->
+        <div id="event-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <h2 id="modal-event-name">Event Name</h2>
+                </div>
+                <div class="modal-body">
+                    <img id="modal-event-image" src="images/placeholder.jpg" alt="Event Image" class="modal-image">
+                    <p id="modal-event-date">Date: YYYY-MM-DD</p>
+                    <p id="modal-event-description">Event description goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Kitabghar Section -->
+<section id="kitabghar" class="kitabghar">
+    <div class="kitabghar-content">
+        <div class="kitabghar-image">
+            <img src="images/kitabghar.png" alt="Kitabghar Image">
+        </div>
+        <div class="kitabghar-text">
+            <h1 class="kitabghar-heading">Kitabghar</h1>
+            <p class="kitabghar-description">
+                <strong>Kitabghar</strong> is an initiative by the Sangrachna Club, creating a haven for 
+                bibliophiles within our institution. This cozy library is more than just 
+                a collection; it's a community-driven resource, offering a range of novels 
+                and literary treasures to rent. Kitabghar was built with the goal of 
+                fostering a love for reading, where stories await every curious reader, 
+                and everyone has access to literature that sparks imagination and insight.
+            </p>
+            <button class="kitabghar-button" onclick="window.open('html/kitabghar.html', '_blank')">Borrow a Book</button>
+            
+        </div>
+    </div>
+</section>
+    
+ <a href='http://www.freevisitorcounters.com'>www.freevisitorcounters</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=2b86770e245e1c9b53ec489ea830213a0689dd1b'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1319003/t/2"></script>
+
+
+
+
+<footer class="footer">
+    <div class="footer-columns">
+        <div class="footer-column">
+            <h3>Sangrachna</h3>
+            <p><em>"You bring the stories, we bring the platform"</em></p>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><i class="fas fa-envelope"></i> sangrachna@niet.co.in</li>
+                <li><i class="fas fa-phone"></i> +91-9410816313</li>
+                <li>
+                    <a href="https://www.instagram.com/sangrachna_niet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/sangrachna-niet?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BR9Qw2BauQIGbMOdMqtstOA%3D%3D" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Address</h3>
+            <p><em>19, Institutional Area,<br>
+                Knowledge Park II,<br>
+                Greater Noida,<br>
+                Uttar Pradesh, 201306</em></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <hr />
+        <p>&copy; 2024 Sangrachna. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+<script src="js/fevents.js"></script>
+<script src="js/fscript.js"></script>
+
+
+</body>
+</html>
