@@ -1,0 +1,81 @@
+/* About Us Section */
+.about-us {
+    display: flex;
+    align-items: center;
+    background-color: rgb(222, 209, 195, 0.747); /* Background color */
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 30px; /* Add padding */
+    margin: 20px; /* Margin around the box */
+    border-radius: 8px; /* Optional: round the corners */
+    max-width: 1200px; /* Limit width */
+    margin-left: auto; /* Center the box */
+    margin-right: auto; /* Center the box */
+    flex-direction: row; /* Default to row direction */
+
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row; /* Use row on larger screens */
+    max-width: 100%; /* Ensure the width is responsive */
+    width: 100%; /* Make sure it takes full width */
+}
+
+/* Responsive adjustments */
+.about-image {
+    flex: 1; /* Allow the image to take up one part of the flex container */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: rgb(31, 31, 31);
+}
+
+.about-image img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-text {
+    flex: 1; /* Allow the text to take up one part of the flex container */
+    padding-left: 30px; /* Space between image and text */
+    padding-right: 30px;
+}
+
+/* Headings and Description */
+.about-heading {
+    font-family: Gloria Hallelujah, Arial;
+    font-size: 3rem; /* Main heading font size */
+    color: rgb(0, 0, 0); /* Highlighted color */
+    margin-bottom: 1rem; /* Space below heading */
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.644));
+}
+
+.about-description {
+    font-size: 1rem; /* Description font size */
+    line-height: 1.8rem; /* Line height for readability */
+    text-align: justify;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        padding: 20px; /* Less padding on small screens */
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack content on smaller screens */
+        align-items: center; /* Center the content */
+    }
+
+    .about-text {
+        padding-left: 0; /* Remove left padding on smaller screens */
+        text-align: center; /* Center align text */
+    }
+
+    .about-heading {
+        font-size: 2.5rem; /* Smaller heading on small screens */
+    }
+
+    .about-description {
+        font-size: 1rem; /* Smaller description text */
+    }
+}

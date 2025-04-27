@@ -1,0 +1,158 @@
+/* Members Section Styling */
+.members {
+    display: flex;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.9); /* Background color */
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 30px; /* Add padding */
+    margin: 20px; /* Margin around the box */
+    border-radius: 8px; /* Optional: round the corners */
+    max-width: 1200px; /* Limit width */
+    margin-left: auto; /* Center the box */
+    margin-right: auto; /* Center the box */
+    flex-direction: row; /* Default to row direction */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.mem-box {
+    display: flex;
+    flex-direction: column; /* Use column for stacking content */
+    max-width: 100%; /* Ensure the width is responsive */
+    width: 100%; /* Make sure it takes full width */
+    text-align: center; /* Center text inside mem-box */
+}
+
+/* Member Heading */
+.member-heading {
+    font-family: Gloria Hallelujah, Arial;
+    font-size: 3rem; /* Updated to match About Us heading size */
+    color: rgba(255, 255, 255, 0.9); /* Highlighted color */
+    margin-bottom: 1rem; /* Space below heading */
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5)); /* Reduced shadow */
+    text-align: center; /* Center the heading */
+}
+
+.members-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the rows */
+    align-items: center; /* Center align items */
+}
+
+/* Faculty Members Row */
+.faculty-members {
+    display: flex;
+    justify-content: space-around; /* Spread the boxes evenly */
+    gap: 20px; /* Increased gap between boxes */
+    width: 100%; /* Make full width */
+}
+
+/* Student Members Row */
+.student-members {
+    display: flex;
+    justify-content: space-around; /* Spread the boxes evenly */
+    width: 100%; /* Make full width */
+    gap: 20px; /* Increased gap between boxes */
+}
+
+/* Member Box Styling */
+.member-box {
+    background-color: #666; /* Lighter box background */
+    padding: 20px;
+    border-radius: 8px;
+    width: 25%; /* Adjusted width for better content fit */
+    max-width: 300px; /* Maximum width for member boxes */
+    text-align: center; /* Center text inside member box */
+    color: white; /* White text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Initial shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+.member-box:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7); /* Increase shadow depth on hover */
+    background-color: #777; /* Slightly lighter background color on hover */
+}
+
+/* Member Image */
+.member-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Member Name */
+h4 {
+    margin-bottom: 5px;
+    font-size: 1rem; /* Adjusted font size to be smaller */
+    font-family: Roboto, Arial;
+}
+
+/* Designation and Quote */
+.designation {
+    font-style: italic;
+    font-size: 0.8rem; /* Adjusted font size to be smaller */
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-size: 0.75rem; /* Adjusted font size to be smaller */
+    color: #ccc; /* Light gray for better readability */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .faculty-members,
+    .student-members {
+        flex-direction: column; /* Stack members vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .member-box {
+        width: 70%; /* Make boxes wider on smaller screens */
+        max-width: 80%; /* Adjust maximum width */
+        margin: 0; /* Remove margins */
+    }
+}
+
+@media (max-width: 768px) {
+    .member-heading {
+        font-size: 2.5rem; /* Smaller heading size for mobile */
+    }
+
+    h4 {
+        font-size: 0.9rem; /* Smaller font size for names */
+    }
+
+    .designation {
+        font-size: 0.75rem; /* Smaller font size for designation */
+    }
+
+    .quote {
+        font-size: 0.65rem; /* Smaller font size for quotes */
+    }
+
+    .member-box {
+        width: 90%; /* Full width on smaller screens */
+        margin: 0; /* Remove margins */
+    }
+}
+
+@media (max-width: 480px) {
+    .member-heading {
+        font-size: 2.5rem; /* Even smaller heading for very small screens */
+    }
+
+    h4 {
+        font-size: 0.8rem; /* Further reduce size */
+    }
+
+    .designation {
+        font-size: 0.65rem; /* Further reduce size */
+    }
+
+    .quote {
+        font-size: 0.55rem; /* Further reduce size */
+    }
+}

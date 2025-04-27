@@ -1,0 +1,146 @@
+/* All Events Section Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Light background color */
+}
+
+.event-superbox {
+    background-color: #444;
+    color: rgb(255, 255, 255);
+    padding: 50px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1200px; 
+}
+
+.event-heading {
+    font-family: Gloria Hallelujah, Arial;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.events-container {
+    margin-bottom: 2rem;
+}
+
+.event-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.event-box {
+    background-color: rgba(222, 209, 195, 0.747);
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    color: rgba(0, 0, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.event-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0);
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    width: 80%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+.modal-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.close-btn {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #ffa500;
+    cursor: pointer;
+}
+
+/* Modal Overlay (optional) */
+#event-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none; /* Hide overlay initially */
+    z-index: 999; /* Slightly below the modal */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .event-box {
+        width: calc(50% - 20px); /* 2 boxes per row on smaller screens */
+    }
+
+    .event-heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-box {
+        width: calc(100% - 20px); /* 1 box per row on very small screens */
+    }
+
+    .event-heading {
+        font-size: 2rem;
+    }
+}

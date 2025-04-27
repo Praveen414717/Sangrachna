@@ -1,0 +1,117 @@
+/* Kitabghar Section */
+.kitabghar {
+    display: flex;
+    align-items: stretch; /* Stretch elements to equal height */
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #f0f0f0;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.kitabghar-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+}
+
+.kitabghar-image {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.kitabghar-image img {
+    width: 100%;
+    height: 100%; /* Ensures image takes full container height */
+    object-fit: cover; /* Scales image to cover the full height */
+}
+
+.kitabghar-text {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space content and button evenly */
+}
+
+/* Centering for responsive view */
+.kitabghar-text.centered {
+    align-items: center; /* Center align text and button */
+    text-align: center; /* Center align text */
+}
+
+.kitabghar-heading {
+    font-family: 'Gloria Hallelujah', Arial;
+    font-size: 2.8rem;
+    color: #f8f8f8;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.6));
+}
+
+.kitabghar-description {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    color: #cccccc;
+}
+
+/* Kitabghar Button */
+.kitabghar-button {
+    align-self: flex-start; /* Align button to the start */
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #DED1C3;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.kitabghar-button:hover {
+    background-color: rgb(163, 126, 4);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .kitabghar {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .kitabghar-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kitabghar-text {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .kitabghar-text.centered {
+        align-items: center; /* Center text and button */
+    }
+
+    .kitabghar-heading {
+        font-size: 2.5rem;
+    }
+
+    .kitabghar-description {
+        font-size: 1rem;
+    }
+
+    .kitabghar-button {
+        width: 80%;
+    }
+}

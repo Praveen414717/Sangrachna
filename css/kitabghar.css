@@ -1,0 +1,54 @@
+/* Kitabghar Booking Section */
+.kitabghar-booking {
+    background-color: #1a1a1a; /* Dark background color */
+    color: #f0f0f0; /* Light text color */
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    text-align: center; /* Center align text */
+}
+
+.kitabghar-heading {
+    font-family: 'Gloria Hallelujah', Arial;
+    font-size: 3rem;
+    color: #f8f8f8;
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.kitabghar-description {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    color: #cccccc;
+    margin-bottom: 30px; /* Space below description */
+}
+
+/* JotForm Container */
+.jotform-container {
+    max-width: 800px; /* Maximum width for the form */
+    margin: 0 auto; /* Center the form */
+
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .kitabghar-booking {
+        padding: 30px;
+    }
+
+    .kitabghar-heading {
+        font-size: 2.5rem; /* Smaller heading on small screens */
+    }
+
+    .kitabghar-description {
+        font-size: 1rem; /* Smaller description text */
+    }
+
+    .jotform-container iframe {
+        height: 400px; /* Adjust iframe height for smaller screens */
+    }
+}

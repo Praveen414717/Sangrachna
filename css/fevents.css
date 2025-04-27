@@ -1,0 +1,225 @@
+/* Events Section Styling */
+.event-superbox {
+    background-color: rgba(222, 209, 195, 0.747);
+    color: #000;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.event-heading {
+    font-family: 'Gloria Hallelujah', Arial, sans-serif;
+    font-size: 3rem;
+    color: #000;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.274));
+}
+
+.sub-heading {
+    text-align: left;
+    font-size:1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 100px;
+    color: #000;
+    font-family: 'Gloria Hallelujah', Arial, sans-serif;
+}
+
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    max-width: 100%;
+    gap: 20px;
+}
+
+.event-carousel {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 20px;
+}
+
+.event-box {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 0 1 30%; /* Each event-box takes 30% of the container width */
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.event-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 0.9rem;
+    color: #ccc;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Navigation Buttons */
+.prev-btn, .next-btn {
+    background-color: #666;
+    color: #000;
+    font-size: 2rem;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev-btn {
+    left: -50px;
+}
+
+.next-btn {
+    right: -50px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #888;
+}
+
+/* See More Button */
+
+
+.see-more-btn {
+    display: inline-block; /* Inline-block to allow padding and margins */
+    margin-top: 30px; /* Space above the button */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #888; /* Button background color */
+    color: #2b2929; /* Button text color */
+    text-decoration: none; /* Remove underline from the link */
+    font-family: Roboto, Arial, sans-serif; /* Button font */
+    font-size: 1rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    text-align: center; 
+}
+
+.see-more-btn:hover {
+    background-color: rgb(163, 126, 4);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+.modal-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.close-btn {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .event-carousel {
+        flex-direction: column; /* Stack event boxes vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .event-box {
+        width: 70%; /* Make boxes wider on smaller screens */
+        max-width: 80%; /* Adjust maximum width */
+        margin: 10px 0; /* Add some vertical margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .event-heading {
+        font-size: 2.5rem; /* Smaller heading size for mobile */
+    }
+
+    .sub-heading {
+        margin-left: 50px;
+        font-size: 1.25rem; /* Smaller subheading for mobile */
+    }
+
+    .event-box {
+        width: 90%; /* Full width on smaller screens */
+        margin: 0; /* Remove margins */
+    }
+
+    .event-description {
+        font-size: 0.8rem; /* Smaller font size for description */
+    }
+}
+
+@media (max-width: 480px) {
+    .event-heading {
+        font-size: 2rem; /* Even smaller heading for very small screens */
+    }
+
+    .sub-heading {
+        font-size: 1rem; /* Further reduce subheading size */
+    }
+
+    .event-box {
+        width: 95%; /* Full width on smaller screens */
+        margin: 10px 0; /* Vertical margin */
+    }
+
+    .event-description {
+        font-size: 0.7rem; /* Further reduce description font size */
+    }
+}

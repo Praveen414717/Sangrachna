@@ -1,0 +1,92 @@
+/* General footer styling */
+.footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    text-align: left;
+    gap: 20px; 
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px; 
+}
+
+.footer h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.footer p,
+.footer ul,
+.footer li {
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+.footer p,
+.footer li {
+    font-style: italic;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 8px; 
+    display: flex;
+    align-items: center;
+}
+
+.footer li i {
+    margin-right: 8px; /* Space between icon and text */
+    color: #aaa;
+}
+
+.footer li a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer li a:hover {
+    color: #ddd;
+}
+
+/* Footer bottom styling */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px; 
+}
+
+.footer-bottom hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 15px 0;
+    width: 90%;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        text-align: left;
+        gap: 20px;
+    }
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
