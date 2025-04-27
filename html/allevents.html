@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Events</title>
+    <link rel="stylesheet" href="../css/allevents.css">
+    <link rel="stylesheet" href="../css/fnavbar.css"> <!-- Existing navbar CSS -->
+    <link rel="stylesheet" href="../css/footer.css"> <!-- footer section -->
+    <link rel="icon" href="../logo/favicon-logo.png" type="image/png"> <!-- Favicon -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<!-- Navbar -->
+<header>
+    <nav class="navbar">
+        <!-- Left Side Links -->
+        <ul class="nav-left">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#about-us">About Us</a></li>
+            <li><a href="../index.html#footer">Members</a></li>
+        </ul>
+
+        <!-- Club Logo -->
+        <div class="logo">
+            <img src="../logo/sangrachna-logo.png" alt="Club Logo">
+        </div>
+
+        <!-- Right Side Links -->
+        <ul class="nav-right">
+            <li><a href="../index.html#events">Events</a></li>
+            <li><a href="../index.html#kitabghar">Kitabghar</a></li>
+            <li><a href="../index.html#footer">Contact Us</a></li>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- Dropdown Menu for Mobile -->
+    <div class="dropdown-menu">
+        <ul class="dropdown-left">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#about-us">About Us</a></li>
+            <li><a href="../index.html#members">Team</a></li>
+        </ul>
+        <ul class="dropdown-right">
+            <li><a href="../index.html#events">Events</a></li>
+            <li><a href="../index.html#kitabghar">Kitabghar</a></li>
+            <li><a href="../index.html#footer">Contact Us</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- All Events Section -->
+<section id="all-events" class="events">
+    <div class="event-superbox">
+
+        <!-- Upcoming Events Section -->
+        <div class="events-container">
+            <h2 class="event-heading">Upcoming Events</h2>
+            <div class="event-carousel">
+                <div class="event-box" onclick="openModal('Chitthi', '../images/upcomming events/Chitthi.png', 'Soon', 'Letters from the heart')">
+                    <img src="../images/upcomming events/Chitthi.png" alt="Event 1" class="event-image">
+                    <h4>Chitthi</h4>
+                    <p class="event-description">Letters from the hearts.</p>
+                </div>
+
+                <div class="event-box" onclick="openModal('Filmy', '../images/upcomming events/Filmy.png', 'Soon', 'Characters on the screen')">
+                    <img src="../images/upcomming events/Filmy.png" alt="Event 2" class="event-image">
+                    <h4>Filmy</h4>
+                    <p class="event-description">Characters on the screen.</p>
+                </div>
+
+                <div class="event-box" onclick="openModal('Jabardasti', '../images/upcomming events/Jabardasti.png', 'Soon', 'Forced to not fit in.')">
+                    <img src="../images/upcomming events/Jabardasti.png" alt="Event 3" class="event-image">
+                    <h4>Jabardasti</h4>
+                    <p class="event-description">Forced to not fit in.</p>
+                </div>
+
+                <div class="event-box" onclick="openModal('Pustak', '../images/upcomming events/Pustak.png', 'Soon', 'Writing is addictive.')">
+                    <img src="../images/upcomming events/Pustak.png" alt="Event 4" class="event-image">
+                    <h4>Pustak</h4>
+                    <p class="event-description">Writing is addictive.</p>
+                </div>
+
+                <div class="event-box" onclick="openModal('Alag hun par galat nahi', '../images/upcomming events/alag hun par galat nahi.png', 'Soon', 'Celebrating Diversity.')">
+                    <img src="../images/upcomming events/alag hun par galat nahi.png" alt="Event 5" class="event-image">
+                    <h4>Alag hun par galat nahi</h4>
+                    <p class="event-description">Celebrating Diversity.</p>
+                </div>
+
+                <div class="event-box" onclick="openModal('Zikr', '../images/upcomming events/Zikr.png', 'Soon', 'Be Open.')">
+                    <img src="../images/upcomming events/Zikr.png" alt="Event 6" class="event-image">
+                    <h4>Zikr</h4>
+                    <p class="event-description">Be open.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Past Events Section -->
+        <div class="events-container">
+            <h2 class="event-heading">Past Events</h2>
+            <div class="event-carousel">
+                <div class="event-box" onclick="openModal('Kitabey', '../images/past events/Kitabey.png', 'Soon', 'World Book Fair visit.')">
+                    <img src="../images/past events/Kitabey.png" alt="Event 1" class="event-image">
+                    <h4>Kitabey</h4>
+                    <p class="event-description">World Book Fair visit.</p>
+                </div>
+
+                <div class="event-box" onclick="openModal('Yaadon ka Bandhan', '../images/past events/Yaadon ka bandhan.png', 'Soon', 'A bond beyond threads.')">
+                    <img src="../images/past events/Yaadon ka bandhan.png" alt="Event 2" class="event-image">
+                    <h4>Yaadon ka Bandhan</h4>
+                    <p class="event-description">A bond beyond threads.</p>
+                </div>
+
+                <div class="event-box" onclick="openModal('Ramotsav', '../images/past events/Ramotsav.png', 'Soon', 'The unknowns of Ramayan.')">
+                    <img src="../images/past events/Ramotsav.png" alt="Event 3" class="event-image">
+                    <h4>Ramotsav</h4>
+                    <p class="event-description">The unknowns of Ramayan.</p>
+                </div>
+
+                <div class="event-box" onclick="openModal('Khula Asmaan', '../images/past events/Khula Asmaan.png', 'Soon', 'Thinking beyond boundaries.')">
+                    <img src="../images/past events/Khula Asmaan.png" alt="Event 4" class="event-image">
+                    <h4>Khula Asmaan</h4>
+                    <p class="event-description">Thinking beyond boundaries.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Event Details -->
+        <div id="event-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <h2 id="modal-event-name">Event Name</h2>
+                </div>
+                <div class="modal-body">
+                    <img id="modal-event-image" src="images/placeholder.jpg" alt="Event Image" class="modal-image">
+                    <p id="modal-event-date">Date: YYYY-MM-DD</p>
+                    <p id="modal-event-description">Event description goes here.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay for modal background -->
+        <div id="event-modal-overlay" class="modal-overlay" onclick="closeModal()"></div>
+
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    <div class="footer-columns">
+        <div class="footer-column">
+            <h3>Sangrachna</h3>
+            <p><em>"You bring the stories, we bring the platform"</em></p>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><i class="fas fa-envelope"></i> sangrachna@niet.co.in</li>
+                <li><i class="fas fa-phone"></i> +91-9410816313</li>
+                <li>
+                    <a href="https://www.instagram.com/sangrachna_niet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/sangrachna-niet?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BR9Qw2BauQIGbMOdMqtstOA%3D%3D" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Address</h3>
+            <p><em>19, Institutional Area,<br>
+                Knowledge Park II,<br>
+                Greater Noida,<br>
+                Uttar Pradesh, 201306</em></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <hr />
+        <p>&copy; 2024 Sangrachna. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script src="../js/allevents.js"></script>
+<script src="../js/fevents.js"></script>
+<script src="../js/fscript.js"></script>
+
+
+</body>
+</html>
